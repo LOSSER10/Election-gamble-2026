@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Viral Kohli",
+    "country": "India",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1500000,
+    "img": "https://picsum.photos/seed/player1/400/300"
+  },
+  {
+    "id": 2,
+    "name": "Rohit Sharmaj",
+    "country": "India",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1200000,
+    "img": "https://picsum.photos/seed/player2/400/300"
+  },
+  {
+    "id": 3,
+    "name": "Sakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1300000,
+    "img": "https://picsum.photos/seed/player3/400/300"
+  },
+  {
+    "id": 4,
+    "name": "Tamim Iqlab",
+    "country": "Bangladesh",
+    "role": "Batsman",
+    "battingStyle": "Left-Hand-Bat",
+    "price": 900000,
+    "img": "https://picsum.photos/seed/player4/400/300"
+  },
+  {
+    "id": 5,
+    "name": "Babar Akram",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1600000,
+    "img": "https://picsum.photos/seed/player5/400/300"
+  },
+  {
+    "id": 6,
+    "name": "Shaheen Afrid",
+    "country": "Pakistan",
+    "role": "Bowler",
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1100000,
+    "img": "https://picsum.photos/seed/player6/400/300"
+  },
+  {
+    "id": 7,
+    "name": "David Warnern",
+    "country": "Australia",
+    "role": "Batsman",
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1700000,
+    "img": "https://picsum.photos/seed/player7/400/300"
+  },
+  {
+    "id": 8,
+    "name": "Mitchel Starky",
+    "country": "Australia",
+    "role": "Bowler",
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1400000,
+    "img": "https://picsum.photos/seed/player8/400/300"
+  },
+  {
+    "id": 9,
+    "name": "Joe Rootson",
+    "country": "England",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1350000,
+    "img": "https://picsum.photos/seed/player9/400/300"
+  },
+  {
+    "id": 10,
+    "name": "Ben Stokely",
+    "country": "England",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1800000,
+    "img": "https://picsum.photos/seed/player10/400/300"
+  },
+  {
+    "id": 11,
+    "name": "Kane Williamz",
+    "country": "New Zealand",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1600000,
+    "img": "https://picsum.photos/seed/player11/400/300"
+  },
+  {
+    "id": 12,
+    "name": "Trent Boultan",
+    "country": "New Zealand",
+    "role": "Bowler",
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1000000,
+    "img": "https://picsum.photos/seed/player12/400/300"
+  }
+]
