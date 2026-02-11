@@ -7,39 +7,48 @@ const AvailablePlayers = ({PlayersPromise}) => {
      const playersData = use(PlayersPromise)
      console.log(playersData)
     return (
-        <div className='max-w-[1200px] mx-auto'>
+        <div className='max-w-[1200px] mx-auto grid grid-cols-3 gap-4 mt-10'>
           
-
-
-
-      <div className="card bg-base-100 w-96 shadow-sm">
+{
+ playersData.map(playersData=>
+ <div className="card bg-base-100  shadow-sky-900 bg-zinc-600" >
   <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
+    <img className='w-full h-[300px] object-cover'
+      src={playersData.img} alt="Player" />
   </figure>
   <div className="mt-4">
 <div  className='flex'>
      <img src={humanImg} alt="" />
-    <h2 className="card-title ml-2">Card Title</h2>
+    <h2 className="card-title ml-2">{playersData.name}</h2>
 </div>
   
-<div  className='flex items-center justify-between'>
-<div  className='flex items-center mt-4'>
+<div  className='flex items-center justify-between border-b-2 border-gray-400 pb-2'>
+
+<div  className='flex items-center mt-4 '>
     <img className="border-2 " src={reportImg} alt="" />
-    <span className='ml-1'>Bangladesh</span>
-</div>
- <button className='btn'>All rounder</button>
+    <span className='ml-1'>{playersData.country}</span>
 </div>
 
-    <div className="card-actions justify-end mt-4">
-      <button className="btn btn-primary">Buy Now</button>
+ <button className='btn'>All rounder</button>
+</div>
+<div className='flex justify-between font-bold'>
+  <span>Rating</span>
+  <span>5</span>
+</div>
+
+<div className='flex justify-between font-bold'>
+  <span className='font-bold'>{playersData.role}</span>
+  <span>{playersData.battingStyle}</span>
+</div>
+
+    <div className="card-actions justify-between mt-4">
+      <span className='font-bold'>Price: ${playersData.price}</span>
+      <button className="btn btn-primary">Choose Player</button>
     </div>
   </div>
 </div>
-
-
-
+) 
+}
 
         </div>
     );
