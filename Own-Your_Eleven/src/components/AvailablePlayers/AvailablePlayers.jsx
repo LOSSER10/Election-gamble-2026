@@ -3,7 +3,7 @@ import humanImg from '../../assets/Group.png'
 import reportImg from '../../assets/report.png'
 import PlayerCard from '../PlayerCard/PlayerCard';
 
-const AvailablePlayers = ({PlayersPromise}) => {
+const AvailablePlayers = ({PlayersPromise,setAvailableBalance ,availableBalance}) => {
     
      const playersData = use(PlayersPromise)
      console.log(playersData)
@@ -11,7 +11,10 @@ const AvailablePlayers = ({PlayersPromise}) => {
         <div className='max-w-[1200px] mx-auto grid grid-cols-3 gap-4 mt-10'>
           
 {
- playersData.map(player=><PlayerCard  playersData={playersData}></PlayerCard>)
+playersData.map(player => (
+  <PlayerCard setAvailableBalance={setAvailableBalance} playersData={player} availableBalance={availableBalance} />
+))
+
 }
 
         </div>

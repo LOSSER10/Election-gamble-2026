@@ -12,16 +12,17 @@ const fatchPlayers = async () => {
   return res.json()
 }
 
-
+ const PlayersPromise= fatchPlayers()
 function App() {
 
+const[availableBalance,setAvailableBalance] =useState(6000000)
 const [toggle,setToggle]=useState(false)
-  const PlayersPromise= fatchPlayers()
+ 
 
   return (
     <>
 
-<Navbar></Navbar>
+<Navbar availableBalance={availableBalance}></Navbar>
 <div className='max-w-[1200px] mx-auto flex items-center justify-between mt-10'>
  <h1 className='font-bold text-2xl'>Available Players</h1>
  <div>
@@ -33,7 +34,7 @@ const [toggle,setToggle]=useState(false)
 </div>
 
 {
-  toggle === true ? <Suspense fallback={<span className="loading loading-spinner text-error"></span>}><AvailablePlayers PlayersPromise={PlayersPromise}></AvailablePlayers></Suspense>: <SelectedPlayers></SelectedPlayers>
+  toggle === true ? <Suspense fallback={<span className="loading loading-spinner text-error"></span>}><AvailablePlayers availableBalance={availableBalance}     setAvailableBalance={setAvailableBalance}PlayersPromise={PlayersPromise}></AvailablePlayers></Suspense>: <SelectedPlayers ></SelectedPlayers>
 }
 
 
