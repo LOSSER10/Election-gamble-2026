@@ -3,7 +3,7 @@ import humanImg from '../../assets/Group.png'
 import reportImg from '../../assets/report.png'
 import PlayerCard from '../PlayerCard/PlayerCard';
 
-const AvailablePlayers = ({PlayersPromise,setAvailableBalance ,availableBalance}) => {
+const AvailablePlayers = ({PlayersPromise,setAvailableBalance ,availableBalance,setPurchasedPlayers,purchasedPlayers}) => {
     
      const playersData = use(PlayersPromise)
      console.log(playersData)
@@ -12,7 +12,9 @@ const AvailablePlayers = ({PlayersPromise,setAvailableBalance ,availableBalance}
           
 {
 playersData.map(player => (
-  <PlayerCard setAvailableBalance={setAvailableBalance} playersData={player} availableBalance={availableBalance} />
+  <PlayerCard setAvailableBalance={setAvailableBalance} playersData={player} availableBalance={availableBalance} 
+  setPurchasedPlayers={setPurchasedPlayers} 
+purchasedPlayers={purchasedPlayers} />
 ))
 
 }

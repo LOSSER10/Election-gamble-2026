@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import humanImg from '../../assets/Group.png'
 import reportImg from '../../assets/report.png'
 
-const PlayerCard = ({playersData,setAvailableBalance,availableBalance}) => {
+const PlayerCard = ({playersData,setAvailableBalance,availableBalance,setPurchasedPlayers}) => {
   const[isSelected,setIsSelected]=useState(false)
   const handleSelectedCoin=(playersData)=>{
     if(availableBalance<playersData.price){
@@ -48,7 +48,7 @@ setIsSelected(true)
       <button disabled={isSelected} onClick={()=>{
         
 handleSelectedCoin(playersData)
-
+ setPurchasedPlayers(prev => [...prev, playersData]) 
       }
         
       } className="btn btn-primary">{isSelected===true?"Seleted" :"Choose Player"}</button>
