@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+  import { ToastContainer } from 'react-toastify';
+
+
 import Navbar from './components/Navbar/Navbar.jsx'
 import AvailablePlayers from './components/AvailablePlayers/AvailablePlayers.jsx'
  import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers.jsx'
@@ -48,8 +51,7 @@ const removePlayer=(p)=>{
       <SelectedPlayers removePlayer={removePlayer} purchasedPlayers={purchasedPlayers}></SelectedPlayers>
 }
 
-
-
+<ToastContainer />
     </>
   )
 }
